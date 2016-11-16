@@ -17,6 +17,13 @@ var ProductListComponent = (function () {
         this.imageWidth = 50;
         this.imageMargin = 2;
         this.showImage = false;
+        this.isDarkTheme = false;
+        this.foods = [
+            { name: 'Pizza', rating: 'Excellent' },
+            { name: 'Burritos', rating: 'Great' },
+            { name: 'French fries', rating: 'Pretty good' },
+        ];
+        this.progress = 0;
     }
     ProductListComponent.prototype.toggleImage = function () {
         this.showImage = !this.showImage;

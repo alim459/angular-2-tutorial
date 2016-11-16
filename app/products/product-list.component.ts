@@ -33,4 +33,15 @@ export class ProductListComponent implements OnInit {
     onRatingClicked(message: string): void {
         this.pageTitle = 'Product List: ' + message;
     }
+
+    isDarkTheme: boolean = false;
+  lastDialogResult: string;
+
+  foods: any[] = [
+    {name: 'Pizza', rating: 'Excellent'},
+    {name: 'Burritos', rating: 'Great'},
+    {name: 'French fries', rating: 'Pretty good'},
+  ];
+
+  progress: number = 0;
 }
